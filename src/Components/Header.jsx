@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <Stack direction={"row"} justifyContent={"space-between"} w={"100%"}>
             <Stack alignItems={"center"} direction={"row"} spacing={6}>
-                <Icon as={FcIdea} fontSize={"xl"} />
+                <Icon as={FcIdea} fontSize={"4xl"} />
                 <Text as={"h1"} fontSize={"xl"} fontWeight={"bold"}>
                     advice generator
                 </Text>

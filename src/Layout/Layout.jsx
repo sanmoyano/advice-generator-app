@@ -10,8 +10,12 @@ const Layout = () => {
             alignItems={"center"}
             h={"100%"}
             justifyContent={"center"}
+            left={0}
             margin={"auto"}
             maxW={"600px"}
+            p={6}
+            position={"absolute"}
+            right={0}
             spacing={8}
             w={"100%"}
         >
