@@ -16,7 +16,7 @@ const Layout = () => {
             p={6}
             position={"absolute"}
             right={0}
-            spacing={8}
+            spacing={12}
             w={"100%"}
         >
             <Header />

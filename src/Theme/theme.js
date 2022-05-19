@@ -9,6 +9,11 @@ export default extendTheme({
         body: "Roboto, sans-serif",
     },
 
+    colors: {
+        primary: theme.colors.green,
+        secondary: theme.colors.gray,
+    },
+
     styles: {
         global: {
             "html, body, #root": {
