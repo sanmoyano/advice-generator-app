@@ -1,25 +1,14 @@
 import { Stack, Text, StackDivider, useColorModeValue, Icon, Box, Button } from "@chakra-ui/react";
 import { BsFillDice5Fill } from "react-icons/bs";
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+
+import { DataContext } from "../Providers/DataProvider";
 
 const Card = () => {
     const bgColor = useColorModeValue("secondary.100", "secondary.700");
     const diverColor = useColorModeValue("secondary.700", "secondary.100");
 
-    const [textAdvice, setTextAdvice] = useState([]);
-
-    const END_POINT = "	https://api.adviceslip.com/advice";
-
-    const fetchData = async () => {
-        const res = await fetch(END_POINT);
-        const data = await res.json();
-
-        setTextAdvice(data.slip); //cuando tengo un array de objetos, puedo usar el nombre del objeto para acceder a sus propiedades y pasarlos al state y llamarlas estado.propiedad
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
+    const { textAdvice, fetchData } = useContext(DataContext);
 
     return (
         <Stack
